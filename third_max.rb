@@ -1,3 +1,8 @@
 def third_max(nums)
-    return nums.uniq.sort[-3] 
+    sortnums = nums.uniq.sort
+    if sortnums.length < 3
+        return sortnums.last
+    else
+        return sortnums[-3]
+    end    
 end
